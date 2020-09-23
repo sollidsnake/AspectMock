@@ -7,6 +7,16 @@
             "email": "davert@codeception.com"
         }
     ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/xfuturomax/framework"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/xfuturomax/parser-reflection"
+    }
+  ],
     "autoload": {
            "psr-0": {
                "AspectMock": "src/"
@@ -14,7 +24,8 @@
        },
     "require": {
         "php": ">=7.0.0",
-        "goaop/framework": "^2.2.0 | ^3.0.0-RC2",
+        "goaop/framework": "dev-fix/support-of-new-php-parser-composer",
+        "goaop/parser-reflection": "dev-fix/support-of-new-php-parser",
         "phpunit/phpunit": "> 6.0.0",
         "symfony/finder": ">=2.4 <6.0"
     },
